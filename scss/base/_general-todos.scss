@@ -41,12 +41,17 @@ body {
     align-items: center;
 }
 
+@keyframes rotate {from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}}
+
 .logo {
     width: 100px;
     height: 100px;
     mix-blend-mode: multiply;
-
+    animation: 3s rotate linear infinite;
+    transform-origin: 50% 50%;     
 }
+
 
 .titulo-encabezado {
     display: flex;
@@ -80,7 +85,3 @@ body {
     font-size: 3rem;
 }
 
-.logo {
-    animation: 3s rotate linear infinite;
-    transform-origin: 50% 50%;
-}
